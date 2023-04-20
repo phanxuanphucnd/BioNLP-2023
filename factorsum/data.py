@@ -106,6 +106,9 @@ def _get_data_keys(dataset_name):
     if dataset_name == "govreport":
         source_key = "report"
         target_key = "summary"
+    elif dataset_name in ['plos', 'elife']:
+        source_key = "article"
+        target_key = "lay_summary"
     else:
         source_key = "article"
         target_key = "abstract"
@@ -586,3 +589,4 @@ if __name__ == "__main__":
     3. Generating CSV files for all arXiv splits:
     > python -m factorsum.data prepare_dataset scientific_papers arxiv
     """
+
