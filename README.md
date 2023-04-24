@@ -2,7 +2,7 @@
 
 BIONLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop
 
-## Training 
+## How to use
 
 - STEP 1: 
 
