@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 # Copyright 2021 The HuggingFace Team. All rights reserved.
-#
+#predict_split
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -420,6 +420,7 @@ def main():
         hasattr(model.config, "max_position_embeddings")
         and model.config.max_position_embeddings < data_args.max_source_length
     ):
+        print("-------------", model_args.resize_position_embeddings, data_args.max_source_length)
         if model_args.resize_position_embeddings is None:
             logger.warning(
                 f"Increasing the model's number of position embedding vectors from {model.config.max_position_embedding} "
@@ -557,6 +558,7 @@ def main():
 
         if data_args.predict_split not in raw_datasets:
             raise ValueError("--do_predict requires a test dataset")
+
         predict_dataset = raw_datasets[data_args.predict_split]
         
         if data_args.max_predict_samples is not None and len(predict_dataset) > data_args.max_predict_samples:
@@ -626,6 +628,7 @@ def main():
         result['label_max_tokens'] = max(label_tokens)
 
         result = {k: round(v, 4) for k, v in result.items()}
+
         return result
 
     # Initialize our Trainer

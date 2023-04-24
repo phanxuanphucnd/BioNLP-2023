@@ -5,17 +5,17 @@ python scripts/run_summarization.py \
     --do_train \
     --do_eval \
     --do_predict \
-    --output_dir output/"${DATASET}"-k_5_samples_20 \
-    --per_device_train_batch_size 4 \
-    --per_device_eval_batch_size 4 \
+    --output_dir output/"${DATASET}" \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 2 \
     --predict_with_generate \
     --gradient_accumulation_steps 4 \
     --generation_max_length 500 \
     --generation_num_beams 4 \
-    --val_max_target_length 128 \
+    --val_max_target_length 500 \
     --max_source_length 1024 \
-    --max_target_length 128 \
-    --save_total_limit 2 \
+    --max_target_length 500 \
+    --save_total_limit 20 \
     --save_strategy steps \
     --evaluation_strategy steps \
     --save_steps 5000 \
@@ -28,9 +28,9 @@ python scripts/run_summarization.py \
     --max_train_samples 4000000 \
     --max_eval_samples 10000 \
     --max_predict_samples 10000 \
-    --train_file data/"${DATASET}"/train-random_k_5_samples_20_train.csv \
-    --validation_file data/"${DATASET}"/validation-random_k_5_samples_20_validation.csv \
-    --test_file data/"${DATASET}"/test-random_k_5_samples_20_test.csv \
+    --train_file data/"${DATASET}"/PLOS_train.csv \
+    --validation_file data/"${DATASET}"/PLOS_validation.csv \
+    --test_file data/"${DATASET}"/PLOS_test.csv \
     --text_column source \
     --summary_column target \
     --seed 17
