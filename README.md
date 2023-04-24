@@ -27,7 +27,7 @@ Run the training script as follows:
 
 - STEP 3: 
 
-Inference
+Inference as follows:
 
 ```shell
 >>> plos_infer.sh
