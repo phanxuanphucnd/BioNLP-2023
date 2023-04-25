@@ -1,7 +1,7 @@
-DATASET='eLife3'
+DATASET='eLife'
 
 python scripts/run_summarization.py \
-    --model_name_or_path GanjinZero/biobart-v2-base \
+    --model_name_or_path artifacts/bart-base-e \
     --do_train \
     --do_eval \
     --do_predict \
@@ -20,7 +20,7 @@ python scripts/run_summarization.py \
     --evaluation_strategy steps \
     --save_steps 2000 \
     --eval_steps 2000 \
-    --max_steps 12000 \
+    --max_steps 20000 \
     --learning_rate 5e-5 \
     --report_to wandb \
     --metric_for_best_model eval_rouge1_fmeasure \
@@ -28,9 +28,9 @@ python scripts/run_summarization.py \
     --max_train_samples 4000000 \
     --max_eval_samples 10000 \
     --max_predict_samples 10000 \
-    --train_file data/"${DATASET}"/eLife3_train.csv \
-    --validation_file data/"${DATASET}"/eLife3_validation.csv \
-    --test_file data/"${DATASET}"/eLife3_test.csv \
+    --train_file data/"${DATASET}"/eLife_train.csv \
+    --validation_file data/"${DATASET}"/eLife_validation.csv \
+    --test_file data/"${DATASET}"/eLife_test.csv \
     --text_column source \
     --summary_column target \
     --seed 17

@@ -1,5 +1,5 @@
 python scripts/run_summarization.py \
-    --model_name_or_path artifacts/eLife-23042023/checkpoint-4000 \
+    --model_name_or_path artifacts/eLife-best/checkpoint-13000-49.9065 \
     --do_predict \
     --output_dir ./results/eLife \
     --per_device_eval_batch_size 4 \
@@ -12,3 +12,5 @@ python scripts/run_summarization.py \
     --dataset_name data/infer/eLife \
     --dataset_config elife \
     --predict_split test
+
+python norm_elife.py test

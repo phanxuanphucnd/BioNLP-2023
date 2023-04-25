@@ -1,5 +1,5 @@
 python scripts/run_summarization.py \
-    --model_name_or_path artifacts/PLOS/checkpoint-25000 \
+    --model_name_or_path artifacts/PLOS/PLOS2/checkpoint-5000 \
     --do_predict \
     --output_dir ./results/PLOS \
     --per_device_eval_batch_size 4 \
@@ -12,3 +12,6 @@ python scripts/run_summarization.py \
     --dataset_name './data/infer/PLOS' \
     --dataset_config plos \
     --predict_split test
+
+
+python norm_plos.py test
