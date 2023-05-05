@@ -2,7 +2,7 @@
 
 BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop.
 
-We achieve the **Third Rank** in the shared task (and the **Second Rank** excluding the baseline submission of the organizers).
+We achieved the **Third Rank** in the shared task (and the **Second Rank** excluding the baseline submission of the organizers).
 
 The performance on the private-test set of our best system and compared with the top-ranked systems: Top-1 (MDC), Top-2 (Baselines) reported in the shared task leaderboard.
 
