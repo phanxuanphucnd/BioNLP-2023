@@ -1,6 +1,8 @@
 # BioNLP Workshop
 
-BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop
+BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop.
+
+We achieve the third rank in the shared task (and the second rank excluding the baseline submission of the organizers).
 
 ## How to use
 
