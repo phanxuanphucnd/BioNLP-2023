@@ -7,7 +7,7 @@ We achieve the **Third Rank** in the shared task (and the **Second Rank** exclud
 The performance on the private-test set of our best system and compared with the top-ranked systems: Top-1 (MDC), Top-2 (Baselines) reported in the shared task leaderboard.
 
 |                    | R-1 &uarr; | R-2 &uarr; | R-L &uarr;  | BERTScore &uarr; | FKGL &darr; | DCRS &darr; | BARTScore &uarr; |
-|--------------------|------------|------------|-------------|------------------|-------------|-------------|------------------|
+|--------------------|:------------:|:------------:|:-------------:|:------------------:|:-------------:|:-------------:|:------------------:|
 | Top-1 *(MDC)*      | 0.4822     | **0.1553** | 0.4485      | **0.8707**       | 12.9370     | 10.2058     | -1.1771          |
 | Top-2 *(Baseline)* | 0.4696     | 0.1445     | 0.4371      | 0.8642           | **12.0694** | 10.2487     | **-0.8305**      |
 | Our Approach     | **0.4829** | 0.1469     | **0.4502**  | 0.8571           | 12.2923     | **10.0862** | -1.7357          |
