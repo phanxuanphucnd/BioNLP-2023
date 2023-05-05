@@ -1,6 +1,6 @@
 # BioNLP Workshop
 
-BIONLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop
+BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop
 
 ## How to use
 
