@@ -2,7 +2,19 @@
 
 BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop.
 
-We achieve the third rank in the shared task (and the second rank excluding the baseline submission of the organizers).
+We achieve the **Third Rank** in the shared task (and the **Second Rank** excluding the baseline submission of the organizers).
+
+The performance on the private-test set of our best system and compared with the top-ranked systems: Top-1 (MDC), Top-2 (Baselines) reported in the shared task leaderboard.
+
+|  | extbf{R-1$\uparrow$} | \textbf{R-2$\uparrow$} | \textbf{R-L$\uparrow$} | \textbf{BERT Score$\uparrow$} | \textbf{FKGL$\downarrow$} | \textbf{DCRS$\downarrow$} | \textbf{BARTScore$\uparrow$} |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| Top-1 \textit{(MDC)} | 0.4822 | \textbf{0.1553} | 0.4485 | \textbf{0.8707} | 12.9370 | 10.2058 | -1.1771 |
+| Top-2 \textit{(Baseline)} | 0.4696 | 0.1445 | 0.4371 | 0.8642 | \textbf{12.0694} | 10.2487 | \textbf{-0.8305} |
+| FactorSum\_12k | \textbf{0.4829} | 0.1469 | \textbf{0.4502} | 0.8571 | 12.2923 | \textbf{10.0862} | -1.7357 |
+| FS\_12k(PLOS) | 0.4853 | 0.1711 | 0.4473 | 0.8617 | 14.8063 | 11.5870 | -1.3791 |
+| FS\_12k(eLife) | 0.4805 | 0.1227 | 0.4532 | 0.8526 | 9.7781 | 8.5854 | -2.0924 |
+
+
 
 ## How to use
 
