@@ -1,8 +1,10 @@
 # BioNLP Workshop
 
-BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop.
+BioNLP 2023 and Shared Tasks @ ACL 2023: https://aclweb.org/aclwiki/BioNLP_Workshop. 
 
-We achieved the **Third Rank** in the shared task (and the **Second Rank** excluding the baseline submission of the organizers).
+Paper: VBD-NLP at BioLaySumm Task 1: Explicit and Implicit Key Information Selection for Lay Summarization on Biomedical Long Documents](https://github.com/phanxuanphucnd/BioNLP-2023/blob/main/docs/VBD-NLP%20at%20BioLaySumm%20Task%201:%20Explicit%20and%20Implicit%20Key%20Information%20Selection%20for%20Lay%20Summarization%20on%20Biomedical%20Long%20Documents.pdf)
+
+We achieved the **Third Rank** in the shared task (and the **Second Rank** excluding the baseline submission of the organizers). 
 
 The performance on the private-test set of our best system and compared with the top-ranked systems: Top-1 (MDC), Top-2 (Baselines) reported in the shared task leaderboard.
 
